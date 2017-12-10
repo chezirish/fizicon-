@@ -6,7 +6,7 @@ $(function() {
 
     function requestApi(){
         var data = {'data':''};
-        var url = 'http://api.qa.imumk.ru/api/mobilev1/update/';
+        var url = 'https://api.qa.imumk.ru/api/mobilev1/update/';
         
         $.ajax({
             type: "POST",
