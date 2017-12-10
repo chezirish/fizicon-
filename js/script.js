@@ -6,7 +6,7 @@ $(function() {
 
     function requestApi(){
         var data = {'data':''};
-        var url = 'http://api.qa.imumk.ru/api/mobilev1/update/';
+        var url = '//api.qa.imumk.ru/api/mobilev1/update/';
         
         $.ajax({
             type: "POST",
@@ -41,7 +41,7 @@ $(function() {
     var search = document.getElementById('search');
     // бонусы баг
     // адаптив баги
-    // https://www.imumk.ru/showcase?subj=&genre=&grade=&search=
+    // ошибка popper
 
     radios.addEventListener('click', render);
     sub.addEventListener('change', render);
