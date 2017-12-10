@@ -27,10 +27,6 @@ body {
     outline: none;
 }
 
-.wrapper .container-fluid {
-    padding-left: 0;
-}
-
 .wrapper__form select:focus {
     border: 1px solid #07C;
 }
@@ -76,18 +72,24 @@ fieldset {
     text-align: center;
 }
 
-.wrapper .row {
-    margin-top: 55px;
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.wrapper .colfix {
-    max-width: 200px;
+.flex-item {
+    flex-basis: 23%;
+    padding: 0 10px;
+    flex-grow: 1;
 }
 
-.col__content {
+.flex__content {
     border: solid 1px #b5b5b5; 
     border-radius: 10px;
     overflow: hidden;
+    margin: 55px 15px 0 15px;
+    max-width: 170px;
     min-height: 260px;
 }
 
