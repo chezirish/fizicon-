@@ -1,0 +1,171 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title {
+    margin: 0 auto;
+    text-align: center;
+    margin: 24px 0;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.wrapper__form select {
+    width: 100%;
+    padding: .3em .5em;
+    height: 2.3em;
+    border: 1px solid #706f6f;background: #fff;
+    font-size: 14px;
+    border-radius: 6px;
+    vertical-align: middle;
+    outline: none;
+}
+
+.wrapper .container-fluid {
+    padding-left: 0;
+}
+
+.wrapper__form select:focus {
+    border: 1px solid #07C;
+}
+
+.wrapper__search {
+    border-radius: 6px;
+    width: 100%;
+    padding: .3em .5em;
+    height: 2.3em;
+    border: 1px solid #706f6f;background: #fff;
+    font-size: 14px;
+    border-radius: 6px;
+    vertical-align: middle;
+    outline: none;
+}
+
+.wrapper__search:focus {
+    border: 1px solid #07C;
+}
+
+.form__submit {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: normal;
+    background: #fff url(../icon-search-25.png) center no-repeat;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+fieldset {
+    margin: 0 auto;
+}
+
+.wrapper__fieldset {
+    max-width: 225px;
+    margin: 0 auto;
+}
+
+.wrapper__fieldset legend {
+    text-align: center;
+}
+
+.wrapper .row {
+    margin-top: 55px;
+}
+
+.wrapper .colfix {
+    max-width: 200px;
+}
+
+.col__content {
+    border: solid 1px #b5b5b5; 
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 260px;
+}
+
+.figure {
+    height: 134px;
+    overflow: hidden;
+    position: relative;
+}
+
+.figure__modal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 7px 16px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.figure__modal a {
+    padding: .4em 16px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.95);;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.figure__modal a:hover {
+    background: #fff;
+    text-decoration: none;
+}
+
+.cover {
+    width: 100%;
+}
+
+.info {
+    padding: 0 16px 10px 16px;
+}
+
+
+.subject,
+.grade {
+    font-size: 14px;
+    margin: 0;
+}
+
+.genre {
+    font-size: 11px;
+    margin: 10px 0;
+}
+
+.more {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #00c1ff;
+}
+
+.buy {
+    text-align: center;
+    margin: 0;
+}
+
+.buy a {
+    padding: .4em 16px;
+    border-radius: 6px;
+    background: #00c1ff;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.buy a:hover {
+    color: #fff;
+    background: rgb(0, 174, 230);
+    text-decoration: none;
+}
+

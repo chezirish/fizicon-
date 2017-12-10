@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Витрина</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <script defer src="js/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>    
+    <script defer src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h1>Витрина</h1>                
+        </div>
+        <div class="container-fluid">
+            <form class="wrapper__form">
+                <div class="row">
+                    <div class="col">
+                        <select name="subject" id="subject">
+                            <option>Все предметы</option>
+                            <option>Алгебра</option>
+                            <option>Английский язык</option>
+                            <option>Биология</option>
+                            <option>География</option>
+                            <option>Геометрия</option>
+                            <option>Естествознание</option>
+                            <option>Информатика</option>
+                            <option>История</option>
+                            <option>Математика</option>
+                            <option>Обществознание</option>
+                            <option>Окружающий мир</option>
+                            <option>Робототехника</option>
+                            <option>Русский язык</option>
+                            <option>Физика</option>
+                            <option>Химия</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select name="genre" id="genre">
+                                <option>Все жанры</option>
+                                <option>Задачник</option>
+                                <option>Рабочая тетрадь</option>
+                                <option>Тренажер ВПР-2017</option>
+                                <option>Тренажер ЕГЭ-2018</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select name="grade" id="grade">
+                                <option>Все классы</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="wrapper__search" id="search" placeholder="Поиск">
+                    </div>
+                    <button class="form__submit" type="submit" title="Найти"></button>
+                </div>
+            </form>
+            <fieldset class="wrapper__fieldset">
+                    <legend>Вывод цены: </legend>
+                    <label for="radio-1">Рубли</label>
+                    <input class="wrapper__radio" checked type="radio" name="radio-1" id="radio-1">
+                    <label for="radio-2">Бонусы</label>
+                    <input class="wrapper__radio"  type="radio" name="radio-1" id="radio-2">
+            </fieldset>   
+        </div>
+        <!-- <div class="row__wrapper"></div> -->
+        <!-- <div class="row">
+            <div class="col">
+                <div class="col__content">
+                    <div class="figure">
+                        <img class="cover" src="https://www.imumk.ru/covers/80.png" alt="">
+                        <div class="figure__modal">
+                            <a href="#">Попробовать</a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p class="subject">Алгебра</p>
+                        <p class="grade">7 класс</p>
+                        <p class="genre">Рабочая тетрадь</p>
+                        <p class="more"><a href="https://www.imumk.ru/offer/103">Подробнее</a></p>
+                        <p class="buy"><a href="#">Купить за 200 руб.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col__content">
+                    <div class="figure">
+                        <img class="cover" src="https://www.imumk.ru/covers/80.png" alt="">
+                        <div class="figure__modal">
+                            <a href="#">Попробовать</a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p class="subject">Алгебра</p>
+                        <p class="grade">7 класс</p>
+                        <p class="genre">Рабочая тетрадь</p>
+                        <p class="more"><a href="https://www.imumk.ru/offer/103">Подробнее</a></p>
+                        <p class="buy"><a href="#">Купить за 200 руб.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col__content">
+                    <div class="figure">
+                        <img class="cover" src="https://www.imumk.ru/covers/80.png" alt="">
+                        <div class="figure__modal">
+                            <a href="#">Попробовать</a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p class="subject">Алгебра</p>
+                        <p class="grade">7 класс</p>
+                        <p class="genre">Рабочая тетрадь</p>
+                        <p class="more"><a href="https://www.imumk.ru/offer/103">Подробнее</a></p>
+                        <p class="buy"><a href="#">Купить за 200 руб.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col__content">
+                    <div class="figure">
+                        <img class="cover" src="https://www.imumk.ru/covers/80.png" alt="">
+                        <div class="figure__modal">
+                            <a href="#">Попробовать</a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p class="subject">Алгебра</p>
+                        <p class="grade">7 класс</p>
+                        <p class="genre">Рабочая тетрадь</p>
+                        <p class="more"><a href="https://www.imumk.ru/offer/103">Подробнее</a></p>
+                        <p class="buy"><a href="#">Купить за 200 руб.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col__content">
+                    <div class="figure">
+                        <img class="cover" src="https://www.imumk.ru/covers/80.png" alt="">
+                        <div class="figure__modal">
+                            <a href="#">Попробовать</a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p class="subject">Алгебра</p>
+                        <p class="grade">7 класс</p>
+                        <p class="genre">Рабочая тетрадь</p>
+                        <p class="more"><a href="https://www.imumk.ru/offer/103">Подробнее</a></p>
+                        <p class="buy"><a href="#">Купить за 200 руб.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col">
+            <div class="col__content">
+                <div class="figure">
+                    <img class="cover" src="https://www.imumk.ru/covers/80.png" alt="">
+                    <div class="figure__modal">
+                        <a href="#">Попробовать</a>
+                    </div>
+                </div>
+                <div class="info">
+                    <p class="subject">Алгебра</p>
+                    <p class="grade">7 класс</p>
+                    <p class="genre">Рабочая тетрадь</p>
+                    <p class="more"><a href="https://www.imumk.ru/offer/103">Подробнее</a></p>
+                    <p class="buy"><a href="#">Купить за 200 руб.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="col__content">
+                <div class="figure">
+                    <img class="cover" src="https://www.imumk.ru/covers/80.png" alt="">
+                    <div class="figure__modal">
+                        <a href="#">Попробовать</a>
+                    </div>
+                </div>
+                <div class="info">
+                    <p class="subject">Алгебра</p>
+                    <p class="grade">7 класс</p>
+                    <p class="genre">Рабочая тетрадь</p>
+                    <p class="more"><a href="https://www.imumk.ru/offer/103">Подробнее</a></p>
+                    <p class="buy"><a href="#">Купить за 200 руб.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="col__content">
+                <div class="figure">
+                    <img class="cover" src="https://www.imumk.ru/covers/80.png" alt="">
+                    <div class="figure__modal">
+                        <a href="#">Попробовать</a>
+                    </div>
+                </div>
+                <div class="info">
+                    <p class="subject">Алгебра</p>
+                    <p class="grade">7 класс</p>
+                    <p class="genre">Рабочая тетрадь</p>
+                    <p class="more"><a href="https://www.imumk.ru/offer/103">Подробнее</a></p>
+                    <p class="buy"><a href="#">Купить за 200 руб.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="col__content">
+                <div class="figure">
+                    <img class="cover" src="https://www.imumk.ru/covers/80.png" alt="">
+                    <div class="figure__modal">
+                        <a href="#">Попробовать</a>
+                    </div>
+                </div>
+                <div class="info">
+                    <p class="subject">Алгебра</p>
+                    <p class="grade">7 класс</p>
+                    <p class="genre">Рабочая тетрадь</p>
+                    <p class="more"><a href="https://www.imumk.ru/offer/103">Подробнее</a></p>
+                    <p class="buy"><a href="#">Купить за 200 руб.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="col__content">
+                <div class="figure">
+                    <img class="cover" src="https://www.imumk.ru/covers/80.png" alt="">
+                    <div class="figure__modal">
+                        <a href="#">Попробовать</a>
+                    </div>
+                </div>
+                <div class="info">
+                    <p class="subject">Алгебра</p>
+                    <p class="grade">7 класс</p>
+                    <p class="genre">Рабочая тетрадь</p>
+                    <p class="more"><a href="https://www.imumk.ru/offer/103">Подробнее</a></p>
+                    <p class="buy"><a href="#">Купить за 200 руб.</a></p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
